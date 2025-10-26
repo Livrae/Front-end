@@ -1,0 +1,369 @@
+html,
+body {
+  height: 100%;
+}
+/* oii :) */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1 0 auto;
+}
+/* Menu */
+.navbar-principal .menu-navegador {
+  display: flex;
+  width: 50%;
+}
+.navbar-principal {
+  color: var(--cor-branca);
+  background-color: var(--cor-laranja);
+}
+.navbar-principal .itens-navbar {
+  width: 90%;
+  margin: auto;
+  padding: 1em 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-principal .logo-navbar {
+  display: flex;
+  align-items: center;
+}
+.navbar-principal .logo-navbar img {
+  width: 5em;
+}
+.navbar-principal .logo-navbar .title-navbar {
+  font-weight: 600;
+  font-size: 2em;
+}
+.navbar-principal ul {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.navbar-principal ul a,
+.navbar-principal ul Link,
+.menu-mobile ul a::before,
+.menu-mobile ul Link::before {
+  position: relative;
+  display: inline-block;
+  color: var(--cor-branca);
+}
+.navbar-principal ul a::before,
+.navbar-principal ul Link::before,
+.menu-mobile ul a::before,
+.menu-mobile ul Link::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--cor-branca);
+  bottom: -5px;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s;
+}
+.navbar-principal ul a:hover::before,
+.navbar-principal ul Link:hover::before,
+.menu-mobile ul a:hover::before,
+.menu-mobileul Link:hover::before {
+  transform: scaleX(1);
+}
+.navbar-principal a,
+.navbar-principal Link,
+.menu-mobile a,
+.menu-mobile Link  {
+  font-size: 1.2em;
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
+}
+.navbar-principal .compra-login {
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+}
+.navbar-principal .compra-login i {
+  font-size: 1.3em;
+  color: var(--cor-branca);
+}
+.navbar-principal .botao-login,
+.menu-mobile .botao-login {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+  padding: 0.7em 1.5em;
+  border-radius: 0.5em;
+  color: var(--cor-laranja);
+  background-color: var(--cor-branca);
+}
+.navbar-principal .botao-login i {
+  color: var(--cor-laranja);
+}
+.menu-mobile .compra {
+  gap: 0.5em;
+  display: flex;
+  align-items: center;
+}
+.nav-link:focus::before,
+.nav-link:active::before {
+    transform: scaleX(1);
+}
+/* menu bar */
+.menu-icon-bar {
+  font-size: 1.8em;
+  color: var(--cor-branca);
+  display: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+  position: absolute;
+  right: 5%;
+  top: 1.5em;
+  z-index: 101;
+}
+.menu-icon-bar.active {
+  transform: rotate(90deg);
+  position: fixed;
+  color: var(--cor-branca);
+}
+.menu-mobile {
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--cor-laranja);
+  backdrop-filter: blur(5px);
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease;
+  z-index: 99;
+}
+.menu-mobile.show {
+  transform: translateY(0);
+  display: flex;
+}
+.menu-mobile a {
+  font-size: 1.2em;
+  color: var(--cor-branca);
+  text-decoration: none;
+}
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3em;
+  font-weight: 600;
+  color: var(--cor-branca);
+  background-color: var(--cor-laranja);
+  margin-top: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+footer a {
+  text-decoration: none;
+  color: var(--cor-branca);
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+.f_inform {
+  width: 80%;
+  padding-top: 3em;
+  margin: auto;
+}
+.f_termos {
+  width: 80%;
+  padding-bottom: 3em;
+  margin: auto;
+}
+.f_totens {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 3em;
+  border-bottom: 2px solid var(--cor-branca);
+  margin-bottom: 2em;
+}
+.f_totens ul {
+    gap: .8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.f_totens li {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+.m_digitais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.m_sociais {
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+.m_sociais img {
+  justify-content: space-between;
+}
+.m_logo img {
+  width: 6em;
+}
+.f_termos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: smaller;
+}
+.b_burocrat ul {
+  gap: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.b_burocrat ul li {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 1310px) {
+  .destaques .articles-destaque {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .navbar-principal .itens-navbar {
+    /* oii Tai :) */
+    /* Oiii jef :) */
+    width: 95%;
+  }
+  /* FOOTER */
+  .f_termos {
+    flex-direction: column;
+  }
+  .c_coo {
+    margin-bottom: 1em;
+  }
+  .destaques .articles-destaque .title {
+    font-size: 1.2em;
+  }
+  .destaques .articles-destaque .valor {
+    font-size: 1.6em;
+  }
+  .destaques .articles-destaque .parcelado {
+    font-size: 0.95em;
+  }
+  .destaques .articles-destaque .adicionar {
+    font-size: 1em;
+  }
+}
+@media (max-width: 1036px) {
+  .destaques .articles-destaque {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  /* Menu */
+  .navbar-principal .menu-navegador {
+    display: none !important;
+  }
+  .navbar-principal .compra-login {
+    display: none !important;
+  }
+  .menu-icon-bar {
+    display: block;
+  }
+}
+@media (max-width: 770px) {
+  /* MENU */
+  .menu-icon-bar {
+    display: inline;
+  }
+  .menu-mobile {
+    display: flex;
+  }
+  /* CARDS */
+  .destaques .articles-destaque {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .destaques h1 {
+    font-size: 1.8em;
+  }
+  .destaques .articles-destaque .title {
+    font-size: 1.1em;
+    height: 2.8em;
+  }
+  .destaques .articles-destaque .valor {
+    font-size: 1.5em;
+  }
+  .destaques .articles-destaque .parcelado {
+    font-size: 0.9em;
+  }
+  .destaques .articles-destaque .adicionar {
+    font-size: 1em;
+    padding: 0.6em 0;
+  }
+  /* FOOTER */
+  .f_inform {
+    width: 90%;
+  }
+  .f_termos {
+    display: block;
+    text-align: center;
+  }
+  .b_burocrat ul li {
+    display: block;
+  }
+  .f_totens{
+    flex-direction: column;
+    gap: .8em;
+  }
+  
+  /* BUSCAR */
+  .Busca-livro {
+    width: 90%;
+  }
+  .Busca-livro form .buscar {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 464px) {
+  /* CARDS */
+  .destaques .articles-destaque {
+    grid-template-columns: 1fr;
+  }
+  /* MENU */
+  .title-navbar {
+    font-size: 1.5em;
+  }
+  .menu-mobile {
+    gap: 1.5em;
+  }
+  .menu-mobile a {
+    font-size: 1em;
+  }
+  /* FOOTER */
+  .b_burocrat{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .b_burocrat ul{
+    flex-direction: column;
+  }
+}
