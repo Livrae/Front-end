@@ -159,6 +159,111 @@ main {
   color: var(--cor-branca);
   text-decoration: none;
 }
+/* CATALOGO */
+.destaques {
+  width: 90%;
+  margin: 4em auto;
+}
+.destaques h1 {
+  margin: 1.5em 0;
+}
+.destaques .articles-destaque {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.5em;
+  justify-content: space-between;
+}
+.destaques .articles-destaque article {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
+  border-radius: 0.4em;
+  border: 1.5px solid var(--cor-cinza);
+  transition: transform 0.2s ease-in-out;
+}
+.destaques .articles-destaque article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.destaques .articles-destaque article img {
+  width: 100%;
+}
+.destaques .articles-destaque .title {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 1em 0;
+  line-height: 1.3;
+  height: 2.6em;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.destaques .articles-destaque .valor {
+  font-size: 1.75em;
+  font-weight: 700;
+}
+.destaques .articles-destaque .parcelado {
+  font-size: 1em;
+  margin: 0.5em 0;
+  color: var(--cor-cinza);
+}
+.destaques .articles-destaque .adicionar {
+    text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 0.7em 0;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 0.7em;
+  color: var(--cor-branca);
+  background-color: var(--cor-laranja);
+  transition: background-color 0.3s ease;
+}
+.destaques .articles-destaque .adicionar:hover {
+  transition: 1s;
+  background-color: var(--cor-laranja-escuro);
+}
+.carregar-livros {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.carregar-livros button {
+  display: flex;
+  justify-content: center;
+  padding: 0.7em 2em;
+  font-size: 1.5em;
+  font-weight: 500;
+  border-radius: 0.7em;
+  color: var(--cor-branca);
+  background-color: var(--cor-cinza);
+}
+.Busca-livro {
+  width: 70%;
+  margin: auto;
+  padding: 0.7em 2em;
+  border-radius: 0.7em;
+  border: 2px solid var(--cor-cinza);
+}
+.Busca-livro form {
+  display: flex;
+  justify-content: space-between;
+}
+.Busca-livro form .buscar {
+  font-size: 1.3em;
+  font-weight: 500;
+  width: 100%;
+  background-color: transparent;
+}
+.Busca-livro form .buscar:focus {
+  outline: none;
+}
+.Busca-livro form button {
+  cursor: pointer;
+  font-size: 1.5em;
+  background-color: transparent;
+}
 /* Footer */
 footer {
   display: flex;
