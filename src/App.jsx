@@ -1,8 +1,8 @@
 import './css/App.css'
-import Header from './components/header'
-import Footer from './components/footer'
-import Catalogo from './components/catalogo';
-import Livro from './components/livro';
+import Header from './components/layout/header'
+import Footer from './components/layout/footer'
+import Catalogo from './pages/catalogo';
+import Livro from './pages/livro';
 
 import { Routes, Route } from "react-router-dom";
 import Slider from 'react-slick';

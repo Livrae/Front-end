@@ -1,5 +1,5 @@
-import Buscar from "./Catalog/buscar";
-import Card from "./Catalog/card";
+import Buscar from "../components/catalog/buscar";
+import Card from "../components/catalog/card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Banner from '../assets/image/Banner/Banner1.png'

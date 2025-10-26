@@ -1,4 +1,4 @@
-import logoBranca from '../assets/icon/logoBranca.png';
+import logoBranca from '../../assets/icon/logoBranca.png';
 import { Link } from 'react-router-dom';
 
 export default function Footer() {

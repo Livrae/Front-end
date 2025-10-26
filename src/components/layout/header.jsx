@@ -1,6 +1,6 @@
-import logoBranca from "../assets/icon/logoBranca.png";
+import logoBranca from "../../assets/icon/logoBranca.png";
 import { Link } from "react-router-dom";
-import { useMenu } from '../hooks/useMenu';
+import { useMenu } from '../../hooks/useMenu';
 
 export default function Header() {
   const { isMenuOpen, toggleMenu, handleLinkClick } = useMenu();
