@@ -2,8 +2,18 @@ import Buscar from "../components/catalog/buscar";
 import Card from "../components/catalog/card";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Banner from '../assets/image/Banner/Banner1.png'
-import capaLivro from "../assets/image/Books/Livro.png";
+import Banner from '../assets/image/Banner/Banner1.png';
+// Imagens
+import Bioquimica from '../assets/image/Books/bioquimica.png';
+import Anatomia from '../assets/image/Books/anatomia-humana.png';
+import Around from '../assets/image/Books/around.png';
+import Fisica from '../assets/image/Books/fisica.png'
+import Hobbit from '../assets/image/Books/hobbit.png'
+import Juridico from '../assets/image/Books/juridico.png'
+import LifeOfPi from '../assets/image/Books/lifeOfPi.png'
+import Musketers from '../assets/image/Books/musketers.png'
+import Treasure from '../assets/image/Books/treasure.png'
+import Vitruvius from '../assets/image/Books/vitruvius.png'
 
 export default function Catalogo() {
   return (
@@ -78,67 +88,70 @@ export default function Catalogo() {
         </section>
         <section className="destaques">
           <Buscar frase="Digite um livro ou obra..."/>
-          <h1>Destaques</h1>
+          <h1>Acadêmicos</h1>
           <div className="articles-destaque">
             <Card
-              img={capaLivro}
+              img={Bioquimica}
               nome="Principios da Bioquímica de Lehninger"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
+              valor="498,91"
+              parcelado="ou 10x de R$49,91"
             />
             <Card
-              img={capaLivro}
+              img={Anatomia}
               nome="Netter Atlas De Anatomia Humana"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
+              valor="611,90"
+              parcelado="ou 10x de R$61,19"
             />
             <Card
-              img={capaLivro}
+              img={Juridico}
               nome="Norberto Bobbio – Teoria do Ordenamento Jurídico"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
+              valor="59,90"
+              parcelado="ou 10x de R$5,99"
             />
             <Card
-              img={capaLivro}
+              img={Vitruvius}
               nome="Vitruvius – Os Dez Livros de Arquitetura"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
+              valor="228,98"
+              parcelado="ou 10x de R$22,90"
             />
             <Card
-              img={capaLivro}
+              img={Fisica}
               nome="Física de Sears & Zemansky"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
+              valor="216,80"
+              parcelado="ou 10x de R$21,70"
+            />
+          </div>
+          <h1>Aventura</h1>
+          <div className="articles-destaque">
+            <Card
+              img={Treasure}
+              nome="A Ilha do Tesouro de Robert Louis Stevenson"
+              valor="69,40"
+              parcelado="ou 10x de R$6,99"
             />
             <Card
-              img={capaLivro}
-              nome="Principios da Bioquímica de Lehninger"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
+              img={LifeOfPi}
+              nome="A Vida de Pi por Yann Martel"
+              valor="58,50"
+              parcelado="ou 10x de R$5,85"
             />
             <Card
-              img={capaLivro}
-              nome="Principios da Bioquímica de Lehninger"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
+              img={Hobbit}
+              nome="O Hobbit de J. R. R. Tolkien"
+              valor="91,60"
+              parcelado="ou 10x de R$9,16"
             />
             <Card
-              img={capaLivro}
-              nome="Principios da Bioquímica de Lehninger"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
+              img={Around}
+              nome="A Volta ao Mundo em Oitenta Dias de Júlio Verne"
+              valor="71,40"
+              parcelado="ou 10x de R$7,14"
             />
-            <Card
-              img={capaLivro}
-              nome="Principios da Bioquímica de Lehninger"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
-            />
-            <Card
-              img={capaLivro}
-              nome="Principios da Bioquímica de Lehninger"
-              valor="75,00"
-              parcelado="ou 10x de R$7,50"
+             <Card
+              img={Musketers}
+              nome="Os Três Mosqueteiros de Alexandre Dumas"
+              valor="1105,10"
+              parcelado="ou 10x de R$10,51"
             />
           </div>
         </section>

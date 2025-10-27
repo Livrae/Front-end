@@ -5,7 +5,7 @@ export default function Buscar({ frase = 'Buscar' }) {
     <div className="Busca-livro">
       <form onSubmit={(e) => e.preventDefault()}>
         <input className="buscar" placeholder={frase} />
-        <button type="submit">🔎</button>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
       </form>
     </div>
   );

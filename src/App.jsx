@@ -14,6 +14,9 @@ export default function App() {
     <>
       <Header />
       <Routes>
+        <Route path='/livro'  element={
+          <Livro/>
+        }/>
         <Route path="/sobre" element={
           <div>
             Página Sobre
@@ -29,7 +32,6 @@ export default function App() {
         <Route path="/catalogo" element={
           <div>
             <Catalogo/>
-            
           </div>
         } />
 

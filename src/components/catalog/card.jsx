@@ -7,7 +7,7 @@ export default function Card({ img, nome, valor, parcelado }) {
       <div className="title">{nome}</div>
       <div className="valor">R$ {valor}</div>
       <div className="parcelado">{parcelado}</div>
-      <a className="adicionar" href="#">Adicionar</a>
+      <a to='/livro' className="adicionar" href="#">Adicionar</a>
     </article>
   );
 }
