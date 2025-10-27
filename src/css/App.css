@@ -181,6 +181,15 @@ main {
   border: 1.5px solid var(--cor-cinza);
   transition: transform 0.2s ease-in-out;
 }
+.destaques .articles-destaque a,
+.destaques .articles-destaque Link,
+.destaques .articles-destaque a:link,
+.destaques .articles-destaque a:visited,
+.destaques .articles-destaque a:hover,
+.destaques .articles-destaque a:active {
+  text-decoration: none;
+  color: var(--cor-preto);
+}
 .destaques .articles-destaque article:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);

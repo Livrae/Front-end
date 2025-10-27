@@ -9,6 +9,8 @@
     --cor-preta: #1a1a1a;
     --cor-branca: #ffffff;
     --cor-cinza: gray;
+    --cor-cinza-claro: #E7E7E7;
+    --cor-azul: #2B00FF;
 }
 *{
     padding: 0;
