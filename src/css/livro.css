@@ -127,6 +127,7 @@
 }
 
 .Ver-livro .Adiciona-carrinho:hover {
+    transition: .5s;
     background-color: var(--cor-azul-escuro);
 }
 
