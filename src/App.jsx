@@ -3,6 +3,7 @@ import Header from './components/layout/header'
 import Footer from './components/layout/footer'
 import Catalogo from './pages/catalogo';
 import Livro from './pages/livro';
+import Botao from './components/layout/botao-livia';
 
 import { Routes, Route } from "react-router-dom";
 import Slider from 'react-slick';
@@ -12,6 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 export default function App() {
   return (
     <>
+      <Botao />
       <Header />
       <Routes>
         <Route path='/livro'  element={
