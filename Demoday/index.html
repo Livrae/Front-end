@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Livraê - Livraria inclusiva e acessível. Aluguel e venda de livros acadêmicos com preços justos.">
+    <title>Livraê - Sua Livraria Inclusiva e Acessível</title>
+    
+    <!-- Google Fonts - Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="./src/CSS/style.css">
+</head>
+<body>
+    <!-- Link de acessibilidade para pular para conteúdo principal -->
+    <a href="#conteudo-principal" class="pular-conteudo">Pular para o conteúdo principal</a>
+
+    <!-- ==================== CABEÇALHO ==================== -->
+    <header class="cabecalho" id="cabecalho" role="banner">
+        <a href="#inicio" class="logo-container" aria-label="Livraê - Página inicial">
+            <div class="logo-icone" aria-hidden="true">📚</div>
+            <span class="logo-texto">Livraê</span>
+        </a>
+        
+        <nav class="navegacao" id="navegacao" role="navigation" aria-label="Navegação principal">
+            <a href="#inicio" class="link-navegacao">Início</a>
+            <a href="#sobre" class="link-navegacao">Sobre Nós</a>
+            <a href="#planos" class="link-navegacao">Planos</a>
+            <a href="#catalogo" class="link-navegacao">Catálogo</a>
+            <a href="#contatos" class="link-navegacao">Contatos</a>
+            <a href="#faq" class="link-navegacao">FAQ</a>
+        </nav>
+
+        <div class="grupo-acoes">
+            <button class="icone-carrinho" aria-label="Carrinho de compras">🛒</button>
+            <button class="botao-entrar">
+                <span aria-hidden="true">👤</span>
+                <span>Entrar</span>
+            </button>
+        </div>
+
+        <!-- Botão menu mobile -->
+        <button class="botao-menu-mobile" id="botaoMenu" aria-label="Abrir menu de navegação" aria-expanded="false">☰</button>
+    </header>
+
+    <!-- ==================== CONTEÚDO PRINCIPAL ==================== -->
+    <main id="conteudo-principal">
+        <!-- ==================== SEÇÃO HERO (PRINCIPAL) ==================== -->
+        <section class="secao-hero" id="inicio" aria-labelledby="titulo-hero">
+            <div class="texto-hero">
+                <h1 id="titulo-hero">Transforme Suas <span class="titulo-destaque">Estantes</span> em Oportunidades</h1>
+                <p>Conectamos estudantes que têm livros com quem precisa deles. Alugue, compre ou venda livros acadêmicos com preços justos e total acessibilidade.</p>
+                
+                <div class="grupo-botoes-hero">
+                    <button class="botao botao-primario">Começar Agora</button>
+                    <button class="botao botao-secundario">Explorar Catálogo</button>
+                </div>
+            </div>
+
+            <div class="imagem-hero">
+                <div class="container-imagem-hero" role="img" aria-label="Ilustração de livros e estudantes">
+                    <span class="icone-placeholder" aria-hidden="true">📖</span>
+                </div>
+                <span class="elemento-decorativo decorativo-1" aria-hidden="true">✨</span>
+                <span class="elemento-decorativo decorativo-2" aria-hidden="true">📚</span>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO DE BUSCA ==================== -->
+        <section class="secao-busca" aria-labelledby="titulo-busca">
+            <div class="container-busca">
+                <h2 id="titulo-busca" class="titulo-busca">Encontre o livro perfeito para você</h2>
+                
+                <form class="formulario-busca" role="search" aria-label="Formulário de busca de livros">
+                    <div class="campo-busca">
+                        <label for="localizacao">Localização</label>
+                        <select id="localizacao" name="localizacao">
+                            <option value="">Selecione a cidade</option>
+                            <option value="sao-paulo">São Paulo</option>
+                            <option value="rio-janeiro">Rio de Janeiro</option>
+                            <option value="belo-horizonte">Belo Horizonte</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-busca">
+                        <label for="curso">Curso</label>
+                        <select id="curso" name="curso">
+                            <option value="">Selecione o curso</option>
+                            <option value="administracao">Administração</option>
+                            <option value="direito">Direito</option>
+                            <option value="engenharia">Engenharia</option>
+                            <option value="medicina">Medicina</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-busca">
+                        <label for="tempo">Tempo de aluguel</label>
+                        <input type="text" id="tempo" name="tempo" placeholder="Ex: 30 dias">
+                    </div>
+
+                    <button type="submit" class="botao-buscar">
+                        <span aria-hidden="true">🔍</span>
+                        <span>Buscar</span>
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO SOBRE NÓS ==================== -->
+        <section class="secao-sobre" id="sobre" aria-labelledby="titulo-sobre">
+            <div class="container-sobre">
+                <div class="conteudo-sobre">
+                    <h2 id="titulo-sobre">Nossa Missão é Tornar a Leitura Possível para Todos</h2>
+                    <p>Somos uma livraria viva, onde inclusão, tecnologia e amor pelos livros se entrelaçam. Queremos ser símbolo de acesso, qualidade e transformação através da leitura.</p>
+                    
+                    <div class="lista-valores">
+                        <div class="item-valor">
+                            <span aria-hidden="true">🤝</span>
+                            <p>Inclusão</p>
+                        </div>
+                        <div class="item-valor">
+                            <span aria-hidden="true">🔒</span>
+                            <p>Confiança</p>
+                        </div>
+                        <div class="item-valor">
+                            <span aria-hidden="true">♿</span>
+                            <p>Acessibilidade</p>
+                        </div>
+                        <div class="item-valor">
+                            <span aria-hidden="true">📈</span>
+                            <p>Desenvolvimento</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="imagem-sobre">
+                    <div class="container-imagem-sobre" role="img" aria-label="Ilustração representando inclusão e acessibilidade">
+                        <span class="icone-placeholder" aria-hidden="true">🌟</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO IA WHATSAPP ==================== -->
+        <section class="secao-ia" aria-labelledby="titulo-ia">
+            <div class="container-ia">
+                <h2 id="titulo-ia">Conheça Nossa Assistente Virtual no WhatsApp</h2>
+                <p>Nossa Inteligência Artificial está disponível 24/7 para responder todas as suas dúvidas sobre livros, planos, aluguéis e muito mais!</p>
+                
+                <div class="card-ia">
+                    <div class="icone-ia" aria-hidden="true">🤖</div>
+                    
+                    <ul class="lista-beneficios-ia">
+                        <li>Responde instantaneamente suas dúvidas</li>
+                        <li>Recomendações personalizadas de livros</li>
+                        <li>Informações sobre disponibilidade e preços</li>
+                        <li>Suporte completo sobre planos e serviços</li>
+                        <li>Atendimento 24 horas, 7 dias por semana</li>
+                        <li>Acessível e fácil de usar</li>
+                    </ul>
+
+                    <button class="botao-ia" onclick="window.open('https://wa.me/5511999999999', '_blank')">
+                        <span aria-hidden="true">💬</span>
+                        <span>Falar com a IA no WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO DE RECURSOS / DIFERENCIAIS ==================== -->
+        <section class="secao-recursos" aria-labelledby="titulo-recursos">
+            <div class="container-recursos">
+                <h2 id="titulo-recursos" class="titulo-secao">Por Que Escolher a Livraê?</h2>
+                <p class="subtitulo-secao">No universo das bibliotecas digitais, nos destacamos por ser uma livraria viva, feita para que todos possam sentir a leitura em cada página</p>
+
+                <div class="grade-recursos">
+                    <!-- Card de Recurso 1 -->
+                    <article class="card-recurso">
+                        <div class="icone-recurso" aria-hidden="true">♿</div>
+                        <h3>Totalmente Acessível</h3>
+                        <p>Recursos de acessibilidade completos para leitores com deficiência visual e outras necessidades especiais.</p>
+                    </article>
+
+                    <!-- Card de Recurso 2 -->
+                    <article class="card-recurso">
+                        <div class="icone-recurso" aria-hidden="true">💰</div>
+                        <h3>Preços Justos</h3>
+                        <p>Alugue ou compre livros acadêmicos com valores acessíveis e condições flexíveis de pagamento.</p>
+                    </article>
+
+                    <!-- Card de Recurso 3 -->
+                    <article class="card-recurso">
+                        <div class="icone-recurso" aria-hidden="true">🤖</div>
+                        <h3>IA Inteligente</h3>
+                        <p>Nossa IA avalia o estado dos livros e garante preços justos, além de recomendar obras perfeitas para você.</p>
+                    </article>
+
+                    <!-- Card de Recurso 4 -->
+                    <article class="card-recurso">
+                        <div class="icone-recurso" aria-hidden="true">🎁</div>
+                        <h3>Sorteios Exclusivos</h3>
+                        <p>Assinantes participam de sorteios mensais de livros novos e outros prêmios incríveis.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO DE PLANOS ==================== -->
+        <section class="secao-planos" id="planos" aria-labelledby="titulo-planos">
+            <div class="container-planos">
+                <h2 id="titulo-planos" class="titulo-planos">Escolha Seu Plano Ideal</h2>
+                <p class="subtitulo-planos">Cada plano foi pensado para garantir sustentabilidade e benefício para os leitores</p>
+
+                <div class="grade-planos">
+                    <!-- Plano 1: Explorador -->
+                    <article class="card-plano">
+                        <h3 class="nome-plano">Explorador de Estantes</h3>
+                        <div class="preco-plano">Grátis</div>
+                        <p class="descricao-plano">Ideal para quem está começando sua jornada literária</p>
+                        
+                        <ul class="lista-beneficios-plano">
+                            <li>Aluguel de até 25 dias</li>
+                            <li>Taxas justas por aluguel</li>
+                            <li>Acesso ao catálogo completo</li>
+                            <li>Suporte básico</li>
+                        </ul>
+
+                        <button class="botao-plano">Começar Grátis</button>
+                    </article>
+
+                    <!-- Plano 2: Desbravador (Destaque) -->
+                    <article class="card-plano destaque">
+                        <span class="badge-destaque">Mais Popular</span>
+                        <h3 class="nome-plano">Desbravador de Histórias</h3>
+                        <div class="preco-plano">R$ 6,99 <span>/mês</span></div>
+                        <p class="descricao-plano">Para leitores frequentes que buscam mais vantagens</p>
+                        
+                        <ul class="lista-beneficios-plano">
+                            <li>Aluguel de até 35 dias</li>
+                            <li>20% de desconto em livros</li>
+                            <li>Prioridade em novos lançamentos</li>
+                            <li>Suporte prioritário</li>
+                            <li>Participação em sorteios</li>
+                        </ul>
+
+                        <button class="botao-plano">Assinar Agora</button>
+                    </article>
+
+                    <!-- Plano 3: Mestre -->
+                    <article class="card-plano">
+                        <h3 class="nome-plano">Mestre dos Livros</h3>
+                        <div class="preco-plano">R$ 35,00 <span>/mês</span></div>
+                        <p class="descricao-plano">Liberdade total para explorar várias obras</p>
+                        
+                        <ul class="lista-beneficios-plano">
+                            <li>Aluguel de até 45 dias</li>
+                            <li>30% de desconto em livros</li>
+                            <li>Múltiplos aluguéis simultâneos</li>
+                            <li>Suporte VIP 24/7</li>
+                            <li>Acesso antecipado</li>
+                            <li>Brindes exclusivos</li>
+                        </ul>
+
+                        <button class="botao-plano">Assinar Premium</button>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO COMO FUNCIONA ==================== -->
+        <section class="secao-como-funciona" aria-labelledby="titulo-como-funciona">
+            <div class="container-como-funciona">
+                <h2 id="titulo-como-funciona" class="titulo-como-funciona">Como Funciona?</h2>
+                <p class="subtitulo-como-funciona">Em 3 passos simples você já está lendo</p>
+
+                <div class="passos-funcionamento">
+                    <!-- Passo 1 -->
+                    <article class="passo">
+                        <div class="icone-passo" aria-hidden="true">
+                            🔍
+                            <span class="numero-passo">1</span>
+                        </div>
+                        <h3>Procure seu livro</h3>
+                        <p>Use nossos filtros inteligentes para encontrar exatamente o livro que você precisa para seus estudos.</p>
+                    </article>
+
+                    <!-- Passo 2 -->
+                    <article class="passo">
+                        <div class="icone-passo" aria-hidden="true">
+                            🛒
+                            <span class="numero-passo">2</span>
+                        </div>
+                        <h3>Escolha alugar ou comprar</h3>
+                        <p>Decida se quer alugar por um período ou comprar o livro. Nossa IA garante preços justos.</p>
+                    </article>
+
+                    <!-- Passo 3 -->
+                    <article class="passo">
+                        <div class="icone-passo" aria-hidden="true">
+                            📚
+                            <span class="numero-passo">3</span>
+                        </div>
+                        <h3>Receba e aproveite</h3>
+                        <p>Receba seu livro em casa e aproveite uma experiência de leitura inclusiva e acessível.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== SEÇÃO NEWSLETTER ==================== -->
+        <section class="secao-newsletter" id="contatos" aria-labelledby="titulo-newsletter">
+            <div class="container-newsletter">
+                <h2 id="titulo-newsletter">Junte-se a Milhares de Leitores</h2>
+                <p>Inscreva-se e receba novidades, promoções exclusivas e participe de sorteios mensais!</p>
+                
+                <form class="formulario-newsletter" id="formularioNewsletter" aria-label="Formulário de inscrição na newsletter">
+                    <label for="email-newsletter" class="sr-only">Seu melhor e-mail</label>
+                    <input 
+                        type="email" 
+                        id="email-newsletter"
+                        class="input-newsletter" 
+                        placeholder="Seu melhor e-mail" 
+                        required
+                        aria-required="true"
+                    >
+                    <button type="submit" class="botao-newsletter">Inscrever-se</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <footer class="rodape" role="contentinfo">
+        <div class="container-rodape">
+            <div class="conteudo-rodape">
+                <!-- Coluna 1: Logo e Descrição -->
+                <div class="coluna-rodape">
+                    <div class="logo-rodape">
+                        <div class="logo-rodape-icone" aria-hidden="true">📚</div>
+                        <span class="logo-rodape-texto">Livraê</span>
+                    </div>
+                    <p class="descricao-rodape">Tornando a leitura acessível para todos. Uma livraria viva onde inclusão e conhecimento se encontram.</p>
+                    
+                    <div class="redes-sociais-rodape" role="navigation" aria-label="Redes sociais">
+                        <a href="#" class="link-social-rodape" aria-label="Facebook">f</a>
+                        <a href="#" class="link-social-rodape" aria-label="Twitter">🐦</a>
+                        <a href="#" class="link-social-rodape" aria-label="LinkedIn">in</a>
+                        <a href="#" class="link-social-rodape" aria-label="Instagram">📷</a>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Links -->
+                <div class="coluna-rodape">
+                    <h3>Home</h3>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 3: Suporte -->
+                <div class="coluna-rodape">
+                    <h3>Catálogo</h3>
+                    <ul>
+                        <li><a href="#contatos">Contatos</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#">Suporte</a></li>
+                    </ul>
+                </div>
+
+                <!-- Coluna 4: Legal -->
+                <div class="coluna-rodape">
+                    <h3>A Propos</h3>
+                    <ul>
+                        <li><a href="#">Nos services</a></li>
+                        <li><a href="#">Nos équipes</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="linha-divisoria" aria-hidden="true"></div>
+
+            <div class="rodape-inferior">
+                <p class="copyright">© 2025 Livraê. Todos os direitos reservados.</p>
+                
+                <nav class="links-legais" aria-label="Links legais">
+                    <a href="./src/assets/pages/politica-de-privacidade.html">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Política de Cookies</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOTÃO WHATSAPP FLUTUANTE ==================== -->
+    <a 
+        href="https://wa.me/5511999999999?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Livraê" 
+        class="botao-whatsapp-flutuante" 
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Fale conosco pelo WhatsApp"
+    >
+        💬
+        <span class="tooltip-whatsapp">Fale com nossa IA!</span>
+    </a>
+
+    <!-- JavaScript Externo -->
+    <script src="./src/js/script.js"></script>
+</body>
+</html>

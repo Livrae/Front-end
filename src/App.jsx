@@ -58,7 +58,6 @@ export default function App() {
         <Route path="/politica-cookies" element={<div>Política de Cookies</div>} />
 
       </Routes>
-      <Slider/>
       <Footer />
     </>
   );
